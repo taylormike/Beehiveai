@@ -116,12 +116,11 @@ Client = (function(_super) {
     }
   };
 
-  Client.prototype.filesEdit = function() {
-
+  Client.prototype.filesEdit = function(content) {
     var params;
     params = {
       "ts": this.ts,
-      "content": "var text = 'Mike Taylor is the worst';\n",
+      "content": content,
       "pretty": "1",
       "file": "F173LQYH5"
     };

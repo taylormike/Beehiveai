@@ -19,7 +19,7 @@ class Bot {
       .subscribe(() => this.onClientOpened());
 
     this.slack.login();
-    this.slack.filesEdit();
+    this.slack.filesEdit('test');
   }
 
 
