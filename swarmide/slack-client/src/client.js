@@ -121,7 +121,7 @@ Client = (function(_super) {
     var params;
     params = {
       "ts": this.ts,
-      "content": "var test = 3;\nvar testb = 2;",
+      "content": "var text = 'Mike Taylor is the worst';\n",
       "pretty": "1",
       "file": "F173LQYH5"
     };
@@ -682,6 +682,9 @@ Client = (function(_super) {
     else {
       params['token'] = this.token;
     } 
+    // this.editor.snippetEdit(this.data);
+    // Editor.tokenSwitch(method, params);
+    // params['token'] = this.token;
     post_data = querystring.stringify(params);
     options = {
       hostname: this.host,
