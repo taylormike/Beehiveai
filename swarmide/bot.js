@@ -19,8 +19,12 @@ class Bot {
       .subscribe(() => this.onClientOpened());
 
     this.slack.login();
-    this.slack.filesEdit('test');
   }
+
+  // Public: Edits a snippet posted in the chat.  
+  editSnippet(content) {
+    this.slack.filesEdit(content);
+  } 
 
 
   // Private: Save which channels and groups this bot is in and log them.
