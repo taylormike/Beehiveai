@@ -1,0 +1,19 @@
+{
+  "name": "BeehiveAI",
+  "version": "1.0.0",
+  "engines": {
+    "node": "0.12.7"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "babel": "^5.0.12",
+    "rx": "^2.5.2",
+    "underscore-plus": "^1.6.6",
+    "coffee-script": "~1.9.3",
+    "https-proxy-agent": "1.0.0",
+    "log": "1.4.0",
+    "ws": "0.8.1"
+  }
+}
