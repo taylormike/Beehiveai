@@ -1,0 +1,10 @@
+doctype html
+html
+  include header
+  body
+    block content
+script(src='javascript/ace.js')
+script.
+  var editor = ace.edit("editor");
+  editor.setTheme("ace/theme/twilight");
+  editor.session.setMode("ace/mode/javascript");

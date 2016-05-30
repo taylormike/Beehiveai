@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/taylormike/Beehiveai#readme",
   "dependencies": {
-    "@slack/client": "^3.3.0"
+    "@slack/client": "^3.3.0",
+    "babel": "^5.0.12",
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
   }
 }
