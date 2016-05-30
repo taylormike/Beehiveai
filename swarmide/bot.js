@@ -1,18 +1,14 @@
 const RtmClient = require('@slack/client').RtmClient;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
 
-const rx = require('rx');
-const _ = require('underscore-plus');
-
 const MessageHelpers = require('./message-helpers');
-
 
 class Bot {
   // Public: Creates a new instance of the bot.
   //
   // token - An API token from the bot integration
   constructor(token) { 
-    this.rtm = new RtmClient(token, {logLevel: 'debug'});
+    this.rtm = new RtmClient(token);
   }
 
   // Public: Brings this bot online and starts handling messages sent to it.
