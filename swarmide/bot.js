@@ -9,6 +9,7 @@ var rtm;
 var web;
 var app;
 var pub; 
+var content;
 
 class Bot {
   // Public: Creates a new instance of the bot.
@@ -52,13 +53,15 @@ class Bot {
     rtm.on(RTM_EVENTS.FILE_SHARED, function (message) {
      console.log('File!!!!!!!!!!!!!!!!!!!!!!!!');
      console.log(message);
-     web.files.info(message.file_id, null, function handleContentFileUpload(err, res) {
-      var responseContent = res.content;
+     web.files.info(message.file_id, null, function handleContentFileUpload(err, response) {
+      content = response.content;
       app.get('/', function(req, res){
-       res.render('users', {text: responseContent});
+       res.render('users', {text: content});
       });
      }); 
    });
+   
+   // Make our db accessible to our router
   }
 }
    
