@@ -47,7 +47,7 @@ class Bot {
       console.log('Message!!!!!!!!!!!!!!!!!!!!!!!!');
       var user = rtm.dataStore.getUserById(message.user)
       var dm = rtm.dataStore.getDMByName(user.name);
-      rtm.sendMessage('Code Shared: http://locahost:3000', dm.id);
+      rtm.sendMessage('Code Shared: http://localhost:3000', dm.id);
     }); 
 
     rtm.on(RTM_EVENTS.FILE_SHARED, function (message) {
