@@ -60,8 +60,6 @@ class Bot {
       });
      }); 
    });
-   
-   // Make our db accessible to our router
   }
 }
    
