@@ -55,10 +55,11 @@ class Bot {
      console.log(message);
      web.files.info(message.file_id, null, function handleContentFileUpload(err, response) {
       content = response.content;
-      app.get('/', function(req, res){
-       res.render('users', {text: content});
-      });
      }); 
+   });
+
+   app.get('/', function(req, res){
+    res.render('users', {text: content});
    });
   }
 }
