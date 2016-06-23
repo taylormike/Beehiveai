@@ -59,7 +59,7 @@ class Bot {
    });
 
    app.get('/', function(req, res){
-    res.render('users', {text: content});
+    res.render('editor', {text: content});
    });
   }
 }
