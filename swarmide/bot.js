@@ -5,11 +5,7 @@ var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
 var WebClient = require('@slack/client').WebClient;
 
 const MessageHelpers = require('./message-helpers');
-var rtm;
-var web;
-var app;
-var pub; 
-var content;
+var rtm, web, app, pub, content;
 
 class Bot {
   // Public: Creates a new instance of the bot.
@@ -30,8 +26,6 @@ class Bot {
   }
 
   setupUI() {
-   //this.app = express();
-   //this.pub = __dirname + '/public';
    app.use(express.static(pub));
    app.set('views', __dirname + '/views');
    app.set('view engine', 'jade');
