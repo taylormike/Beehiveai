@@ -3,7 +3,7 @@
 }
 .ace_editor {
 	border: 1px solid black;
-	width: 49.6%;
+	width: 100%;
 }
 .scrollmargin {
 	height: 80px;
@@ -13,7 +13,4 @@
 	padding: 50% 0% 0% 0%;
 	float: left;
 }
-#editor2 {
-	padding: 50% 0% 0% 0%;
-	float: right;
-	}
+
